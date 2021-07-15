@@ -1,0 +1,12 @@
+micronaut:
+  application:
+    name: todoList
+  server:
+    cors:
+      enabled: true
+    port: 8082
+endpoints:
+  health:
+    enabled: true
+nats.addresses:
+- nats://localhost:4222
