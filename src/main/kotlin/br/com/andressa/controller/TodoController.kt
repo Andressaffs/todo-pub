@@ -15,7 +15,7 @@ class TodoController(private val todoService: TodoService) {
 
     @Post
     fun addTodo (todo: Todo): HttpResponse<Todo> {
-        logger.info("adding todo $todo")
+//        logger.info("adding todo $todo")
         return HttpResponse.created(this.todoService.addTodo(todo))
     }
 
